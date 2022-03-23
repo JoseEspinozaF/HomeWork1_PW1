@@ -4,7 +4,7 @@ body {
     margin-top: 0;
 }
 
-.header {
+header {
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 50%, rgba(0, 0, 0, 1) 100%);
 }
@@ -26,11 +26,25 @@ body {
 }
 
 
+
 /*containers*/
+.container{
+    text-align: center;
+}
 .Html-basics {
     padding: 10px;
+}
+.Html-basics h1{
+    font-family: Verdana;
 }
 
 .Html-Atributes {
     padding: 10px;
+}
+
+.Html-Elements h1{
+    font-family: Verdana;
+}
+.Html-Elements p{
+    font-size: 2rem;
 }
