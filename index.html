@@ -5,143 +5,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/1051/1051277.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/stylesHM1.css">
-    <title>HomeWork I/II</title>
+    <link rel="shortcut icon" href="img/palomitas-de-maiz.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/stylesHM2.css">
+    <link rel="stylesheet" href="">
+    <title>Watch Movies | 2d , 3d</title>
 </head>
 
 <body>
-    <!--initial header-->
     <header>
-        <!--Img comment
-        <img src="https://cdn-icons-png.flaticon.com/128/1051/1051277.png" alt="">
-        -->
-        <h1 class="title-header">Programacion Web I</h1>
+        <div class="nav-header">
+            <img src="/img/palomitas-de-maiz.png" alt="LogoPeliculas">
+            <h1>Watch Movies</h1>
+        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#movie">Peliculas</a>
+            <a href="#demo">Estrenos</a>
+            <a href="#pop">Populares</a>
+        </nav>
     </header>
-    <!--end header-->
-    <div class="container">
-        <div class="Html-basics">
-            <h1>HTML BASICS</h1>
-            <h2>This is heading 2</h2>
-            <h3>This is heading 3</h3>
-            <h4>This is heading 4</h4>
-            <h5>This is heading 5</h5>
-            <h6>This is heading 6</h6>
-            <img src="https://cdn-icons-png.flaticon.com/128/1051/1051277.png" alt="" width="100"><br>
-            <a href="https://www.w3schools.com/html/html_basic.asp" target="_blank">HTML BASICS</a>
+
+    <main>
+        <section class="background-main">
+            <div class="background-header">
+            </div>
+        </section>
+
+        <section class="peliculas-content">
+            <h2 id="movie">Peliculas</h2>
+            <div class="container-movies">
+                <div class="items">
+                    <img src="img/movies/Sweet-Carolina.jpg" alt="carolineMovie">
+                    <button>Ver</button>
+                </div>
+                <div class="items">
+                    <img src="img/movies/The-Adam-Project.jpg" alt="Project">
+                    <button>Ver</button>
+                </div>
+                <div class="items">
+                    <img src="img/movies/The-King's-Man.jpg" alt="Man">
+                    <button>Ver</button>
+                </div>
+                <div class="items">
+                    <img src="img/movies/The-Nowhere-Inn.jpg" alt="Nowhere">
+                    <button>Ver</button>
+                </div>
+                <div class="items">
+                    <img src="img/movies/The-Vault.jpg" alt="Vault">
+                    <button>Ver</button>
+                </div>
+                <div class="items">
+                    <img src="img/movies/Till-Death.jpg" alt="Death">
+                    <button>Ver</button>
+                </div>
+            </div>
+
+        </section>
+        <section class="estrenos-content">
+            <h2 id="demo">Estrenos</h2>
+            <table id="tabla">
+                <tr>
+                    <th>Movie</th>
+                    <th>Genero</th>
+                    <th>Fecha Estreno</th>
+                </tr>
+                <tr>
+                    <td>The Amazing Spiderman</td>
+                    <td>Accion</td>
+                    <td>22/04/2021</td>
+                </tr>
+                <tr>
+                    <td>Fast And Furious</td>
+                    <td>Crimen,Accion</td>
+                    <td>21/02/2021</td>
+                </tr>
+                <tr>
+                    <td>Jumanji</td>
+                    <td>Aventura</td>
+                    <td>27/01/2021</td>
+                </tr>
+                <tr>
+                    <td>Island Trading</td>
+                    <td>Comedia</td>
+                    <td>17/01/2022</td>
+                </tr>
+            </table>
+            <button onclick="changeBackground()">Change Background</button>
+            <button onclick="addRows()"> AgregarPelicula</button>
+        </section>
+        <section class="populares-content">
+            <h2 id="pop">Popular</h2>
+            <div class="item-popular">
+                <iframe src="https://www.youtube.com/embed/PbtDGKp73y8" title="YouTube" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/D09aGdEDK2U" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <img src="img/palomitas-de-maiz.png" alt="">
+        <p>Watch Movies &copy; 2022</p>
+        <div class="redes">
+            <a class="bord" href="#" target="_blank">
+                Facebook
+            </a>
+            <a href="#" target="_blank">
+                Instagram
+            </a>
+            <a href="#" target="_blank">
+                Whatsapp
+            </a>
         </div>
-        <hr>
-        <div class="Html-Elements">
-            <h1>HTML ELEMENTS</h1>
-            <p>An HTML element is defined by a start tag, some content, and an end tag.</p>
-            <span>The HTML element is everything from the start tag to the end tag:</span>
-        </div>
-        <hr>
-        <div class="Html-Atributes">
-            <h1 style="font-family: Verdana;">HTML ATRIBUTES</h1>
-            <p style="font-size: 2rem; text-align: justify;">
-                * Todos los elementos HTML pueden tener atributos <br>
-                * Los atributos proporcionan información adicional sobre los elementos. <br>
-                * Los atributos siempre se especifican en la etiqueta de inicio <br>
-                * Los atributos generalmente vienen en pares de nombre/valor como: nombre="valor"</p>
-        </div>
-        <hr>
-        <div class="Html-paragraphs">
-            <h1 style="font-family: Verdana;">HTML PARAGRAPHS</h1>
-            <pre style="font-size: 2rem;">
-                Text in a pre element
-                is displayed in a fixed-width
-                font, and it preserves
-                both spaces and
-                line breaks
-            </pre>
-            <pre>
-                My Bonnie lies over the ocean.
-              
-                My Bonnie lies over the sea.
-              
-                My Bonnie lies over the ocean.
-              
-                Oh, bring back my Bonnie to me.
-              </pre>
-
-        </div>
-        <hr>
-        <div class="Html-styles">
-            <h1 style="font-family: Verdana;">HTML STYLES</h1>
-            <p>I am normal</p>
-            <p style="color:red;">I am red</p>
-            <p style="color:blue;">I am blue</p>
-            <p style="font-size:50px;">I am big</p>
-
-        </div>
-        <hr>
-        <div class="Html-Formatting">
-            <h1 style="font-family: Verdana; text-transform: uppercase;">HTML Formatting</h1>
-            <p style="font-size: 1.2rem;">
-                <b> - Bold text </b>
-                <strong> - Important text </strong> <br>
-                <i> - Italic text </i> <br>
-                <em> - Emphasized text </em> <br>
-                <mark> - Marked text </mark> <br>
-                <small> - Smaller text </small> <br>
-                <del> - Deleted text </del> <br>
-                <ins> - Inserted text </ins> <br>
-                <p>This is <sub>subscripted</sub> text.</p>
-                <p>This is <sup>superscripted</sup> text.</p>
-            </p>
-        </div>
-        <hr>
-        <div class="HTML-Quotation">
-            <h1 style="font-family: Verdana; text-transform: uppercase;">HTML Quotation and Citation Elements
-            </h1>
-            <p style="font-size: 2.2rem;">
-                En este capítulo repasaremos los elementos blockquote, "q", "abbr", "address", "cite" y "bdo" HTML.
-
-
-            </p>
-            <h2>blockquote para citas</h2>
-            <blockquote cite="http://www.worldwildlife.org/who/index.html">
-                For nearly 60 years, WWF has been protecting the future of nature. The world's leading conservation
-                organization, WWF works in 100 countries and is supported by more than one million members in the United
-                States and close to five million globally.
-            </blockquote>
-            <h3>HTML q para citas cortas</h3>
-            <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
-            <h4>HTML abbr para abreviaturas</h4>
-            <p>The <abbr title="Javascript">JS</abbr> It's a Programming Lenguage.</p>
-            <h5>HTML dirección para información de contacto</h5>
-            <address>
-                Writen by JOse Espinoza.<br>
-                Visit us at:<br>
-                Example.com<br>
-                Box 564, Disneyland<br>
-                Paraguay
-            </address>
-            <h6>HTML cite para título de trabajo</h6>
-            <img src="https://cdn-icons-png.flaticon.com/128/1051/1051277.png" alt="" width="100"><br>
-
-            <p><cite>HTML5</cite> by Tim Berners-Lee. created in 1980.</p>
-            <span>HTML bdo for Bi-Directional Override</span>
-            <bdo dir="rtl">Hola Como estas</bdo>
-
-
-        </div>
-        <hr>
-        <div class="Html-basics">
-            <h1 style="font-family: Verdana;">HTML Colors</h1>
-
-            <h1 style="background-color:#ff0000; height: 150px;"></h1>
-            <h1 style="background-color:rgb(255, 255, 255);"></h1>
-            <h1 style="background-color:hsl(240, 100%, 50%);  height: 150px;"> </h1>
-
+        <p>Coronel Oviedo - Paraguay</p>
+        <div class="referencias">
+            <small>Referencias</small>
+            <a href="http://www.w3bai.com/es/index.html" target="_blank">W3bai</a>
+            <a href="https://developer.mozilla.org/es/" target="_blank">Moxilla Developer</a>
+            <a href="https://www.w3schools.com/" target="_blank">W3schools</a>
         </div>
 
-
-
-    </div>
-
-
+    </footer>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
