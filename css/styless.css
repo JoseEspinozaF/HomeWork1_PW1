@@ -2,6 +2,7 @@
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -70,13 +71,13 @@ nav a {
 .peliculas-content .container-movies {
 
     display: grid;
-    grid-template-columns: repeat(3, 500px);
-    grid-template-rows: repeat(2, 650px);
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(2, 600px);
     justify-content: center;
 }
 
 .container-movies .items img {
-    width: 400px;
+    width: 200px;
 }
 
 .container-movies .items {
@@ -118,9 +119,8 @@ nav a {
 
 table {
     border-collapse: collapse;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    margin: auto;
+    width: 900px;
 }
 
 
@@ -156,7 +156,7 @@ tr:nth-child(even) {
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
     border-radius: 7px;
-    width: 900px;
+    width: 600px;
     height: 506px;
 }
 
@@ -276,7 +276,9 @@ footer small {
     }
 
     /*estrenos content*/
-
+    table{
+        width: 200px;
+    }
     td {
         font-size: 30px;
     }
@@ -292,8 +294,8 @@ footer small {
         -webkit-border-radius: 7px;
         -moz-border-radius: 7px;
         border-radius: 7px;
-        width: 610px;
-        height: 406px;
+        width: 200px;
+        height: 306px;
         -ms-border-radius: 7px;
         -o-border-radius: 7px;
     }
